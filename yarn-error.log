@@ -1,0 +1,33 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add mongoose express body-parser cookie-parser passport passport-local connect-flash csurf express-session express-validator
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;"C:\Program Files (x86)\Common Files\Oracle\Java\javapath;";C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Users\prathap\SQLite\New folder;C:\Program Files\Microsoft VS Code\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Java\jdk-12.0.1\bin;C:\Users\prathap\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\prathap\AppData\Local\Programs\Python\Python36\;C:\Users\prathap\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\prathap\AppData\Local\Programs\Python\Python37\;C:\Program Files\Java\jdk-9.0.4\bin;C:\Users\prathap\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\Microsoft VS Code\bin;C:\Users\prathap\AppData\Local\Microsoft\WindowsApps;C:\Users\prathap\AppData\Roaming\npm;C:\Python34;C:\Python34\Scripts;C:\Program Files\MongoDB\Server\4.0\bin;C:\Users\prathap\AppData\Local\Yarn\bin;C:\Program Files\heroku\bin
+
+Yarn version: 
+  1.13.0
+
+Node version: 
+  8.11.3
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com registry.yarnpkg.com:443
+      at errnoException (dns.js:50:10)
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:92:26)
+
+npm manifest: 
+  {
+    "name": "yes",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

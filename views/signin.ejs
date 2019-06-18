@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <% include ./navbar.ejs %> 
+    <div class="container">
+        <div class="row">
+            <div class="col l12 m10 s6">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title center"> Signin</span>
+                        <% if (hasError) {%>
+                            <%= messages %>
+                            <% } %>
+                        <form action="signin" method="POST">
+                            <label for="email">email</label>
+                            <input type="text" name="email">
+                            <label for="password">Password </label>
+                            <input type="password" name="password">
+                            <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+
+
+                            <div class="card-action">
+                                <button class="btn blue center" type="submit"> Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+</body>
+</html>

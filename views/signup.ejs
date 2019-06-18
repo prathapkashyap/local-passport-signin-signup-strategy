@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <% include ./navbar.ejs %> 
+    <h1 class="center">Signup</h1>
+    <div class="container">
+            <% if (hasError) {%>
+                <%= messages %>
+                <% } %>
+        <form action="signup" method="POST">
+            <label for="username"> User Name:</label>
+                <input type="text" name="username" id="username">
+            <label for="password"> Password:</label>
+                <input name="password" type="password">
+            
+            <label for="email"> Email:</label>
+                <input type="text" name="email" id="email">
+            <label for="confirmpassword"> confirm password</label>
+                <input name="confirmpassword" type="password">
+                <div class="row">
+                        <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+
+                    <div class="col s6 l6">
+                <button type="submit" class="btn blue right "> submit</button>
+            </div>
+            </div>
+            
+        </form>
+
+
+    </div>
+</body>
+</html>
